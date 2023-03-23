@@ -12,11 +12,11 @@ function Main(props){
 
 
 const list= news.map((el)=>{
-  return(<p>
+  return(<p className="container">
     {el.articles.map((e)=>{
       return(
         <div className="news" style={{backgroundColor:"#F8EAD8"}}>
-     <p>{e.title}</p>
+     <h3>{e.title}</h3>
      <p> Details:{e.description}</p>
       <h4>Link :<a href={e.url}>click for more </a> </h4>
       </div>)
